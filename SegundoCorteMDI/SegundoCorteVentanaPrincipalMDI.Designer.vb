@@ -35,6 +35,7 @@ Partial Class SegundoCorteVentanaPrincipalMDI
         AboutToolStripMenuItem = New ToolStripMenuItem()
         ToolTip = New ToolTip(components)
         OpenFileDialog1 = New OpenFileDialog()
+        ToolStripMenuItem3 = New ToolStripMenuItem()
         MenuStrip.SuspendLayout()
         SuspendLayout()
         ' 
@@ -75,7 +76,7 @@ Partial Class SegundoCorteVentanaPrincipalMDI
         ' 
         ' HelpMenu
         ' 
-        HelpMenu.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem1, ToolStripSeparator8, AboutToolStripMenuItem})
+        HelpMenu.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem1, ToolStripSeparator8, ToolStripMenuItem3, AboutToolStripMenuItem})
         HelpMenu.Name = "HelpMenu"
         HelpMenu.Size = New Size(53, 20)
         HelpMenu.Text = "Ay&uda"
@@ -83,23 +84,29 @@ Partial Class SegundoCorteVentanaPrincipalMDI
         ' ToolStripMenuItem1
         ' 
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(135, 22)
+        ToolStripMenuItem1.Size = New Size(181, 22)
         ToolStripMenuItem1.Text = "&Ayuda"
         ' 
         ' ToolStripSeparator8
         ' 
         ToolStripSeparator8.Name = "ToolStripSeparator8"
-        ToolStripSeparator8.Size = New Size(132, 6)
+        ToolStripSeparator8.Size = New Size(178, 6)
         ' 
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(135, 22)
-        AboutToolStripMenuItem.Text = "&Acerca de..."
+        AboutToolStripMenuItem.Size = New Size(181, 22)
+        AboutToolStripMenuItem.Text = "Datos del Estudiante"
         ' 
         ' OpenFileDialog1
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
+        ' 
+        ' ToolStripMenuItem3
+        ' 
+        ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        ToolStripMenuItem3.Size = New Size(181, 22)
+        ToolStripMenuItem3.Text = "&Acerca de..."
         ' 
         ' SegundoCorteVentanaPrincipalMDI
         ' 
@@ -129,5 +136,6 @@ Partial Class SegundoCorteVentanaPrincipalMDI
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
 
 End Class

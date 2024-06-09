@@ -107,36 +107,6 @@ Public Class SegundoCorteVentanaPrincipalMDI
     End Sub
 
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-        'Codigo del componente de Adobe Acrobat Reader
-        'Link al tutorial de como implementarlo: https://youtu.be/003NF5aRrhM?si=EGJTpWwj-jhai04x
-        'If OpenFileDialog1.ShowDialog = System.Windows.Forms.DialogResult.OK Then
-        'PdfReader.src = OpenFileDialog1.FileName
-        'End If
-
-        ' Codigo para abrir el PDF usando el objeto Process (navegador)
-        'Dim URL As String = "https://drive.google.com/file/d/1N5DLisQhZCv3aou9-291aak7P1NHUBD2/view?usp=drive_link"
-
-        'Puedes cambiar chrome.exe por el ejecutable de otro navegador (ej: firefox.exe, opera.exe)
-        'Para probar con distintos navegadores
-        'Dim browser As String = "chrome.exe"
-
-        'Process.Start(browser, URL)
-
-        ' Dim rutaDefault = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-        'Dim fileDefault = "nombrearchivo.pdf"
-
-        'Dim abrir As New OpenFileDialog
-        'abrir.InitialDirectory = rutaDefault
-        'abrir.Filter = "Archivos PDF|*.pdf"
-
-        'If File.Exists(Path.Combine(rutaDefault, fileDefault)) Then
-        'Nombre de archivo que se cargará por defecto, si existe en la ruta
-        'abrir.FileName = fileDefault
-        'End If
-
-        'If abrir.ShowDialog = DialogResult.OK Then
-        'AxAcropdf1.LoadFile(abrir.FileName)
-        ' End If
 
 
     End Sub
@@ -150,4 +120,9 @@ Public Class SegundoCorteVentanaPrincipalMDI
         End If
     End Sub
 
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        PdfEstudianteFormularioMDI.MdiParent = Me
+        PdfEstudianteFormularioMDI.Show()
+
+    End Sub
 End Class

@@ -45,58 +45,60 @@ Partial Class SegundoCorteVentanaPrincipalMDI
         MenuStrip.Location = New Point(0, 0)
         MenuStrip.Name = "MenuStrip"
         MenuStrip.Padding = New Padding(7, 2, 0, 2)
-        MenuStrip.Size = New Size(868, 24)
+        MenuStrip.Size = New Size(868, 28)
         MenuStrip.TabIndex = 5
         MenuStrip.Text = "MenuStrip"
         ' 
         ' ToolsMenu
         ' 
         ToolsMenu.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem2, OptionsToolStripMenuItem, SalirToolStripMenuItem})
+        ToolsMenu.Font = New Font("Comic Sans MS", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ToolsMenu.Name = "ToolsMenu"
-        ToolsMenu.Size = New Size(80, 20)
+        ToolsMenu.Size = New Size(103, 24)
         ToolsMenu.Text = "&Actividades"
         ' 
         ' ToolStripMenuItem2
         ' 
         ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(153, 22)
+        ToolStripMenuItem2.Size = New Size(183, 24)
         ToolStripMenuItem2.Text = "&Primera (10%)"
         ' 
         ' OptionsToolStripMenuItem
         ' 
         OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        OptionsToolStripMenuItem.Size = New Size(153, 22)
+        OptionsToolStripMenuItem.Size = New Size(183, 24)
         OptionsToolStripMenuItem.Text = "&Segunda (20%)"
         ' 
         ' SalirToolStripMenuItem
         ' 
         SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        SalirToolStripMenuItem.Size = New Size(153, 22)
+        SalirToolStripMenuItem.Size = New Size(183, 24)
         SalirToolStripMenuItem.Text = "Salir"
         ' 
         ' HelpMenu
         ' 
         HelpMenu.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem1, ToolStripSeparator8, ToolStripMenuItem3, AboutToolStripMenuItem})
+        HelpMenu.Font = New Font("Comic Sans MS", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         HelpMenu.Name = "HelpMenu"
-        HelpMenu.Size = New Size(53, 20)
+        HelpMenu.Size = New Size(65, 24)
         HelpMenu.Text = "Ay&uda"
         ' 
         ' ToolStripMenuItem1
         ' 
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(181, 22)
+        ToolStripMenuItem1.Size = New Size(180, 24)
         ToolStripMenuItem1.Text = "&Ayuda"
         ' 
         ' ToolStripSeparator8
         ' 
         ToolStripSeparator8.Name = "ToolStripSeparator8"
-        ToolStripSeparator8.Size = New Size(178, 6)
+        ToolStripSeparator8.Size = New Size(177, 6)
         ' 
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(181, 22)
-        AboutToolStripMenuItem.Text = "Datos del Estudiante"
+        AboutToolStripMenuItem.Size = New Size(232, 24)
+        AboutToolStripMenuItem.Text = "Acerca del Estudiante"
         ' 
         ' OpenFileDialog1
         ' 
@@ -105,7 +107,7 @@ Partial Class SegundoCorteVentanaPrincipalMDI
         ' ToolStripMenuItem3
         ' 
         ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(181, 22)
+        ToolStripMenuItem3.Size = New Size(180, 24)
         ToolStripMenuItem3.Text = "&Acerca de..."
         ' 
         ' SegundoCorteVentanaPrincipalMDI

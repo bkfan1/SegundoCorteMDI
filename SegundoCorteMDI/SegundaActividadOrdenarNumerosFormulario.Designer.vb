@@ -22,6 +22,7 @@ Partial Class SegundaActividadOrdenarNumerosFormulario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SegundaActividadOrdenarNumerosFormulario))
         Label1 = New Label()
         InputNumero = New TextBox()
         BtnAgregarNumero = New Button()
@@ -42,75 +43,92 @@ Partial Class SegundaActividadOrdenarNumerosFormulario
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label1.Location = New Point(30, 37)
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(30, 43)
         Label1.Name = "Label1"
-        Label1.Size = New Size(56, 15)
+        Label1.Size = New Size(90, 27)
         Label1.TabIndex = 0
         Label1.Text = "Numero:"
         ' 
         ' InputNumero
         ' 
-        InputNumero.Location = New Point(116, 34)
+        InputNumero.BackColor = SystemColors.ActiveCaption
+        InputNumero.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        InputNumero.Location = New Point(126, 41)
         InputNumero.Name = "InputNumero"
-        InputNumero.Size = New Size(100, 23)
+        InputNumero.Size = New Size(100, 29)
         InputNumero.TabIndex = 1
         ' 
         ' BtnAgregarNumero
         ' 
+        BtnAgregarNumero.BackColor = Color.FromArgb(CByte(55), CByte(181), CByte(81))
         BtnAgregarNumero.Enabled = False
+        BtnAgregarNumero.Font = New Font("Comic Sans MS", 12F)
+        BtnAgregarNumero.ForeColor = Color.White
         BtnAgregarNumero.Location = New Point(261, 34)
         BtnAgregarNumero.Name = "BtnAgregarNumero"
-        BtnAgregarNumero.Size = New Size(121, 49)
+        BtnAgregarNumero.Size = New Size(121, 71)
         BtnAgregarNumero.TabIndex = 2
         BtnAgregarNumero.Text = "Agregar a la Lista"
-        BtnAgregarNumero.UseVisualStyleBackColor = True
+        BtnAgregarNumero.UseVisualStyleBackColor = False
         ' 
         ' BtnNuevoProceso
         ' 
+        BtnNuevoProceso.BackColor = Color.FromArgb(CByte(255), CByte(100), CByte(3))
+        BtnNuevoProceso.Font = New Font("Comic Sans MS", 12F)
+        BtnNuevoProceso.ForeColor = Color.White
         BtnNuevoProceso.Location = New Point(514, 34)
         BtnNuevoProceso.Name = "BtnNuevoProceso"
-        BtnNuevoProceso.Size = New Size(121, 49)
+        BtnNuevoProceso.Size = New Size(121, 71)
         BtnNuevoProceso.TabIndex = 3
         BtnNuevoProceso.Text = "Nuevo Proceso"
-        BtnNuevoProceso.UseVisualStyleBackColor = True
+        BtnNuevoProceso.UseVisualStyleBackColor = False
         ' 
         ' BtnMenorIgualQueCincuenta
         ' 
+        BtnMenorIgualQueCincuenta.BackColor = Color.Yellow
         BtnMenorIgualQueCincuenta.Enabled = False
-        BtnMenorIgualQueCincuenta.Location = New Point(410, 128)
+        BtnMenorIgualQueCincuenta.Font = New Font("Comic Sans MS", 12F)
+        BtnMenorIgualQueCincuenta.Location = New Point(399, 144)
         BtnMenorIgualQueCincuenta.Name = "BtnMenorIgualQueCincuenta"
-        BtnMenorIgualQueCincuenta.Size = New Size(75, 23)
+        BtnMenorIgualQueCincuenta.Size = New Size(98, 38)
         BtnMenorIgualQueCincuenta.TabIndex = 4
         BtnMenorIgualQueCincuenta.Text = "<= 50"
-        BtnMenorIgualQueCincuenta.UseVisualStyleBackColor = True
+        BtnMenorIgualQueCincuenta.UseVisualStyleBackColor = False
         ' 
         ' BtnMayorQueCincuenta
         ' 
+        BtnMayorQueCincuenta.BackColor = Color.FromArgb(CByte(255), CByte(142), CByte(28))
         BtnMayorQueCincuenta.Enabled = False
-        BtnMayorQueCincuenta.Location = New Point(410, 172)
+        BtnMayorQueCincuenta.Font = New Font("Comic Sans MS", 12F)
+        BtnMayorQueCincuenta.Location = New Point(399, 197)
         BtnMayorQueCincuenta.Name = "BtnMayorQueCincuenta"
-        BtnMayorQueCincuenta.Size = New Size(75, 23)
+        BtnMayorQueCincuenta.Size = New Size(98, 36)
         BtnMayorQueCincuenta.TabIndex = 5
         BtnMayorQueCincuenta.Text = "> 50"
-        BtnMayorQueCincuenta.UseVisualStyleBackColor = True
+        BtnMayorQueCincuenta.UseVisualStyleBackColor = False
         ' 
         ' BtnCeroYveinte
         ' 
+        BtnCeroYveinte.BackColor = Color.DarkTurquoise
         BtnCeroYveinte.Enabled = False
-        BtnCeroYveinte.Location = New Point(410, 222)
+        BtnCeroYveinte.Font = New Font("Comic Sans MS", 12F)
+        BtnCeroYveinte.Location = New Point(399, 248)
         BtnCeroYveinte.Name = "BtnCeroYveinte"
-        BtnCeroYveinte.Size = New Size(75, 23)
+        BtnCeroYveinte.Size = New Size(98, 56)
         BtnCeroYveinte.TabIndex = 6
         BtnCeroYveinte.Text = ">0 y <20"
-        BtnCeroYveinte.UseVisualStyleBackColor = True
+        BtnCeroYveinte.UseVisualStyleBackColor = False
         ' 
         ' RadioAsc
         ' 
         RadioAsc.AutoSize = True
+        RadioAsc.Font = New Font("Comic Sans MS", 12F)
         RadioAsc.Location = New Point(18, 31)
         RadioAsc.Name = "RadioAsc"
-        RadioAsc.Size = New Size(87, 19)
+        RadioAsc.Size = New Size(111, 27)
         RadioAsc.TabIndex = 7
         RadioAsc.TabStop = True
         RadioAsc.Text = "Ascendente"
@@ -119,9 +137,10 @@ Partial Class SegundaActividadOrdenarNumerosFormulario
         ' RadioDesc
         ' 
         RadioDesc.AutoSize = True
+        RadioDesc.Font = New Font("Comic Sans MS", 12F)
         RadioDesc.Location = New Point(18, 63)
         RadioDesc.Name = "RadioDesc"
-        RadioDesc.Size = New Size(93, 19)
+        RadioDesc.Size = New Size(119, 27)
         RadioDesc.TabIndex = 8
         RadioDesc.TabStop = True
         RadioDesc.Text = "Descendente"
@@ -130,47 +149,58 @@ Partial Class SegundaActividadOrdenarNumerosFormulario
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label2.Location = New Point(261, 108)
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Comic Sans MS", 12F, FontStyle.Bold)
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(261, 124)
         Label2.Name = "Label2"
-        Label2.Size = New Size(76, 15)
+        Label2.Size = New Size(113, 23)
         Label2.TabIndex = 9
         Label2.Text = "Lista Origen:"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label3.Location = New Point(514, 108)
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Comic Sans MS", 12F, FontStyle.Bold)
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(514, 124)
         Label3.Name = "Label3"
-        Label3.Size = New Size(81, 15)
+        Label3.Size = New Size(119, 23)
         Label3.TabIndex = 10
         Label3.Text = "Lista Destino:"
         ' 
         ' ListaDestino
         ' 
+        ListaDestino.BackColor = SystemColors.ControlLightLight
         ListaDestino.Enabled = False
-        ListaDestino.Location = New Point(514, 128)
+        ListaDestino.Font = New Font("Comic Sans MS", 9F)
+        ListaDestino.Location = New Point(514, 155)
         ListaDestino.Name = "ListaDestino"
-        ListaDestino.Size = New Size(121, 291)
+        ListaDestino.Size = New Size(121, 292)
         ListaDestino.TabIndex = 11
         ListaDestino.UseCompatibleStateImageBehavior = False
         ' 
         ' ListaOrigen
         ' 
+        ListaOrigen.BackColor = SystemColors.ButtonFace
         ListaOrigen.Enabled = False
-        ListaOrigen.Location = New Point(261, 128)
+        ListaOrigen.Font = New Font("Comic Sans MS", 9F)
+        ListaOrigen.Location = New Point(261, 155)
         ListaOrigen.Name = "ListaOrigen"
-        ListaOrigen.Size = New Size(121, 291)
+        ListaOrigen.Size = New Size(121, 292)
         ListaOrigen.TabIndex = 12
         ListaOrigen.UseCompatibleStateImageBehavior = False
         ' 
         ' OrdenamientoGroupBox
         ' 
+        OrdenamientoGroupBox.BackColor = Color.Transparent
         OrdenamientoGroupBox.Controls.Add(RadioAsc)
         OrdenamientoGroupBox.Controls.Add(RadioDesc)
         OrdenamientoGroupBox.Enabled = False
-        OrdenamientoGroupBox.Location = New Point(30, 108)
+        OrdenamientoGroupBox.Font = New Font("Comic Sans MS", 12F)
+        OrdenamientoGroupBox.ForeColor = Color.White
+        OrdenamientoGroupBox.Location = New Point(30, 124)
         OrdenamientoGroupBox.Name = "OrdenamientoGroupBox"
         OrdenamientoGroupBox.Size = New Size(200, 100)
         OrdenamientoGroupBox.TabIndex = 13
@@ -181,7 +211,10 @@ Partial Class SegundaActividadOrdenarNumerosFormulario
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(692, 450)
+        BackColor = SystemColors.HotTrack
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Center
+        ClientSize = New Size(692, 461)
         Controls.Add(OrdenamientoGroupBox)
         Controls.Add(ListaOrigen)
         Controls.Add(ListaDestino)
@@ -194,6 +227,7 @@ Partial Class SegundaActividadOrdenarNumerosFormulario
         Controls.Add(BtnAgregarNumero)
         Controls.Add(InputNumero)
         Controls.Add(Label1)
+        DoubleBuffered = True
         Name = "SegundaActividadOrdenarNumerosFormulario"
         Text = "SegundaActividadOrdenarNumerosFormulario"
         OrdenamientoGroupBox.ResumeLayout(False)

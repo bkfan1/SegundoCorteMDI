@@ -32,10 +32,10 @@ Partial Class SegundoCorteVentanaPrincipalMDI
         HelpMenu = New ToolStripMenuItem()
         ToolStripMenuItem1 = New ToolStripMenuItem()
         ToolStripSeparator8 = New ToolStripSeparator()
+        ToolStripMenuItem3 = New ToolStripMenuItem()
         AboutToolStripMenuItem = New ToolStripMenuItem()
         ToolTip = New ToolTip(components)
         OpenFileDialog1 = New OpenFileDialog()
-        ToolStripMenuItem3 = New ToolStripMenuItem()
         MenuStrip.SuspendLayout()
         SuspendLayout()
         ' 
@@ -86,13 +86,19 @@ Partial Class SegundoCorteVentanaPrincipalMDI
         ' ToolStripMenuItem1
         ' 
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(180, 24)
+        ToolStripMenuItem1.Size = New Size(232, 24)
         ToolStripMenuItem1.Text = "&Ayuda"
         ' 
         ' ToolStripSeparator8
         ' 
         ToolStripSeparator8.Name = "ToolStripSeparator8"
-        ToolStripSeparator8.Size = New Size(177, 6)
+        ToolStripSeparator8.Size = New Size(229, 6)
+        ' 
+        ' ToolStripMenuItem3
+        ' 
+        ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        ToolStripMenuItem3.Size = New Size(232, 24)
+        ToolStripMenuItem3.Text = "&Acerca de..."
         ' 
         ' AboutToolStripMenuItem
         ' 
@@ -103,12 +109,6 @@ Partial Class SegundoCorteVentanaPrincipalMDI
         ' OpenFileDialog1
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
-        ' 
-        ' ToolStripMenuItem3
-        ' 
-        ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(180, 24)
-        ToolStripMenuItem3.Text = "&Acerca de..."
         ' 
         ' SegundoCorteVentanaPrincipalMDI
         ' 

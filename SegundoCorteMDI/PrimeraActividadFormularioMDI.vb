@@ -135,9 +135,4 @@
         LabelPuntaje.Visible = True
         LabelTituloPuntaje2.Visible = True
     End Sub
-
-
-    Private Sub Label17_Click(sender As Object, e As EventArgs) Handles LabelMultiplicacion8.Click
-
-    End Sub
 End Class

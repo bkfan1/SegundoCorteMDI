@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 Imports System.Windows.Forms
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-Imports AxAcroPDFLib
+Imports System.Diagnostics
 
 Public Class SegundoCorteVentanaPrincipalMDI
 
@@ -138,6 +138,9 @@ Public Class SegundoCorteVentanaPrincipalMDI
         'AxAcropdf1.LoadFile(abrir.FileName)
         ' End If
 
+        Process.Start(New ProcessStartInfo("https://drive.google.com/file/d/1N5DLisQhZCv3aou9-291aak7P1NHUBD2/view?usp=drivesdk") With {
+            .UseShellExecute = True
+        })
 
     End Sub
 
@@ -153,5 +156,16 @@ Public Class SegundoCorteVentanaPrincipalMDI
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
         PdfEstudianteFormularioMDI.MdiParent = Me
         PdfEstudianteFormularioMDI.Show()
+    End Sub
+
+    Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
+        SegundaActividadOrdenarNumerosFormulario.MdiParent = Me
+        SegundaActividadOrdenarNumerosFormulario.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+        Dim descripcion As String = "El proyecto desarrollado consiste en un programa en Visual Basic (VB) que incluye múltiples formularios y funcionalidades para diversas actividades de aprendizaje e interacción del usuario. Este proyecto tiene un formulario principal (MDI) que contiene un menú con varias opciones, como 'Actividades' y 'Ayuda'. La subopción 'Salir' permite cerrar la aplicación, y las subopciones 'Primera (10%)' y 'Segunda (20%)' del menú 'Actividades' y 'Acerca de...' del menú 'Ayuda' están programadas para mostrar formularios secundarios específicos. El segundo formulario es un módulo de evaluación de tablas de multiplicar, donde el usuario ingresa el número de la tabla a aprender y los posibles resultados, que luego son evaluados y puntuados del 1 al 10. Las respuestas correctas se resaltan en verde y las incorrectas en rojo, y al finalizar se muestra un mensaje con la cantidad de puntos obtenidos. Además, al presionar la subopción 'Segunda (20%)' del menú 'Actividades', se muestra un formulario adicional para manejar listas de números. Este formulario permite agregar números a una lista (Lista Origen) que se pueden ordenar de forma ascendente o descendente. Dependiendo de ciertos criterios (<50, >50, entre 0 y 20), los números se transfieren a otra lista (Lista Destino). Un botón 'Nuevo Proceso' permite vaciar las listas y restablecer el formulario para un nuevo ingreso de datos."
+
+        MessageBox.Show(descripcion, "Acerca del proyecto")
     End Sub
 End Class

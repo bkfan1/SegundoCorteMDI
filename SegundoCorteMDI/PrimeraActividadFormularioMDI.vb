@@ -32,42 +32,6 @@
 
     End Sub
 
-    Private Sub InputRespuesta2_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta2.TextChanged
-
-    End Sub
-
-    Private Sub InputRespuesta3_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta3.TextChanged
-
-    End Sub
-
-    Private Sub InputRespuesta4_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta4.TextChanged
-
-    End Sub
-
-    Private Sub InputRespuesta5_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta5.TextChanged
-
-    End Sub
-
-    Private Sub InputRespuesta6_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta6.TextChanged
-
-    End Sub
-
-    Private Sub InputRespuesta7_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta7.TextChanged
-
-    End Sub
-
-    Private Sub InputRespuesta8_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta8.TextChanged
-
-    End Sub
-
-    Private Sub InputRespuesta9_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta9.TextChanged
-
-    End Sub
-
-    Private Sub InputRespuesta10_TextChanged(sender As Object, e As EventArgs) Handles InputRespuesta10.TextChanged
-
-    End Sub
-
     Private Sub BtnComenzar_Click(sender As Object, e As EventArgs) Handles BtnComenzar.Click
 
         InputNumeroTabla.Enabled = False

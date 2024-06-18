@@ -102,10 +102,6 @@ Public Class SegundoCorteVentanaPrincipalMDI
 
     End Sub
 
-    Private Sub SegundoCorteVentanaPrincipalMDI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
         'Codigo del componente de Adobe Acrobat Reader
         'Link al tutorial de como implementarlo: https://youtu.be/003NF5aRrhM?si=EGJTpWwj-jhai04x
@@ -137,10 +133,6 @@ Public Class SegundoCorteVentanaPrincipalMDI
         'If abrir.ShowDialog = DialogResult.OK Then
         'AxAcropdf1.LoadFile(abrir.FileName)
         ' End If
-
-        Process.Start(New ProcessStartInfo("https://drive.google.com/file/d/1N5DLisQhZCv3aou9-291aak7P1NHUBD2/view?usp=drivesdk") With {
-            .UseShellExecute = True
-        })
 
     End Sub
 

@@ -55,14 +55,6 @@ Public Class SegundoCorteVentanaPrincipalMDI
         'Utilice My.Computer.Clipboard.GetText() o My.Computer.Clipboard.GetData para recuperar la información del Portapapeles.
     End Sub
 
-    Private Sub ToolBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-
-    End Sub
-
-    Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-
-    End Sub
-
     Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         LayoutMdi(MdiLayout.Cascade)
     End Sub
@@ -88,51 +80,9 @@ Public Class SegundoCorteVentanaPrincipalMDI
 
     Private m_ChildFormNumber As Integer
 
-    Private Sub ToolsMenu_Click(sender As Object, e As EventArgs) Handles ToolsMenu.Click
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
         PrimeraActividadFormularioMDI.MdiParent = Me
         PrimeraActividadFormularioMDI.Show()
-
-    End Sub
-
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-        'Codigo del componente de Adobe Acrobat Reader
-        'Link al tutorial de como implementarlo: https://youtu.be/003NF5aRrhM?si=EGJTpWwj-jhai04x
-        'If OpenFileDialog1.ShowDialog = System.Windows.Forms.DialogResult.OK Then
-        'PdfReader.src = OpenFileDialog1.FileName
-        'End If
-
-        ' Codigo para abrir el PDF usando el objeto Process (navegador)
-        'Dim URL As String = "https://drive.google.com/file/d/1N5DLisQhZCv3aou9-291aak7P1NHUBD2/view?usp=drive_link"
-
-        'Puedes cambiar chrome.exe por el ejecutable de otro navegador (ej: firefox.exe, opera.exe)
-        'Para probar con distintos navegadores
-        'Dim browser As String = "chrome.exe"
-
-        'Process.Start(browser, URL)
-
-        ' Dim rutaDefault = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
-        'Dim fileDefault = "nombrearchivo.pdf"
-
-        'Dim abrir As New OpenFileDialog
-        'abrir.InitialDirectory = rutaDefault
-        'abrir.Filter = "Archivos PDF|*.pdf"
-
-        'If File.Exists(Path.Combine(rutaDefault, fileDefault)) Then
-        'Nombre de archivo que se cargará por defecto, si existe en la ruta
-        'abrir.FileName = fileDefault
-        'End If
-
-        'If abrir.ShowDialog = DialogResult.OK Then
-        'AxAcropdf1.LoadFile(abrir.FileName)
-        ' End If
 
     End Sub
 
